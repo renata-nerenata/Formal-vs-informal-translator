@@ -5,7 +5,8 @@ import streamlit as st
 import torch
 from torchvision import transforms
 import wget
-
+from src.models.predict_model import inference_pipeline
+import time
 
 def load_image():
     uploaded_file = st.file_uploader(label='Pick an image to test')
@@ -57,11 +58,10 @@ def main():
     st.title('Please, be more formal')
     image_adress = 'https://i.redd.it/tyjjl02rzl771.jpg'
     st.image(image_adress)
-    model = load_model()
-    result = st.text_input('Please, enter your unformal sentence')
+    result = st.text_input('Please, enter your informal sentence')
     if result:
         st.write('Calculating results...')
-        st.write(result.upper())
+        st.write(inference_pipeline(result))
 
 
 if __name__ == '__main__':
