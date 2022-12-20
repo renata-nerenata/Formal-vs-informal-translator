@@ -3,6 +3,11 @@ Formal-vs-informal-translator
 
 Implementation seq2seq approach for text style transfer problem for informal-formal translator
 
+
+Run service
+------------
+``` make app ```
+
 Project Organization
 ------------
 
