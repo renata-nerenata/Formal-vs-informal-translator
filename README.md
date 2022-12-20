@@ -1,7 +1,7 @@
 Formal-vs-informal-translator
 ==============================
 
-Implementation seq2seq approach for text style transfer problem
+Implementation seq2seq approach for text style transfer problem for informal-formal translator
 
 Project Organization
 ------------
